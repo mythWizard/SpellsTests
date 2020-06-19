@@ -19,6 +19,9 @@ scoreboard objectives add tsp.spells.dmana dummy
 scoreboard objectives add tsp.spells.m.100 dummy
 scoreboard players set @a tsp.spells.m.100 100
 
+# set player mana if they havent played yet
+execute as @a if score @s tsp.spells.mmana = @s tsp.spells.mmana run scoreboard players set @s tsp.spells.mmana 1000
+
 # individual spell cooldowns in format. In cooldown, 0 is cast time and 1 is effect time
 # 1 Alteration school.spellid.cooldown(0/1)
 # oakflesh

@@ -1,2 +1,32 @@
 #> This is the uninstall function
- datapack disable "file/Spells Tests"
+# remove scoreboards
+scoreboard objectives remove element 
+scoreboard objectives remove cast minecraft.used:minecraft.carrot_on_a_stick
+scoreboard objectives remove spell_id 
+scoreboard objectives remove school 
+scoreboard objectives remove damage 
+
+# mana scoreboards
+scoreboard objectives remove tsp.spells.cmana 
+scoreboard objectives remove tsp.spells.pmana 
+scoreboard objectives remove tsp.spells.mmana 
+scoreboard objectives remove tsp.spells.dmana 
+
+# multipliers
+scoreboard objectives remove tsp.spells.m.100 
+
+# individual spell cooldowns
+scoreboard objectives remove tsp.spells.1.1.0 
+scoreboard objectives remove tsp.spells.1.1.1 
+scoreboard objectives remove tsp.spells.1.2.0 
+scoreboard objectives remove tsp.spells.1.2.1 
+scoreboard objectives remove tsp.spells.1.3.0 
+scoreboard objectives remove tsp.spells.1.3.1 
+scoreboard objectives remove tsp.spells.1.4.0 
+scoreboard objectives remove tsp.spells.1.4.1 
+scoreboard objectives remove tsp.spells.3.1.1  
+scoreboard objectives remove tsp.spells.3.2.2  
+scoreboard objectives remove tsp.spells.5.3  
+
+# disable datapack
+datapack disable "file/Spells Tests"
