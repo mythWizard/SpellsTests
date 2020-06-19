@@ -1,0 +1,3 @@
+execute if score @s tsp.spells.1.2.0 matches 1.. run tellraw @p [{"text":"You cannot use that spell for another "},{"score":{"name":"@s","objective":"tsp.spells.1.2.0"},"color":"gold"},{"text":" ticks."}]
+execute if score @s tsp.spells.1.2.0 matches ..0 if score @s tsp.spells.cmana matches 80.. run function tsp:spells/spells/alteration/run/stoneflesh
+execute if score @s tsp.spells.1.2.0 matches ..0 if score @s tsp.spells.cmana matches ..80 run tellraw @p [{"text":"You don't have enough mana to cast this spell."}]

@@ -1,0 +1,18 @@
+{
+     "criteria": {
+          "trigger": {
+               "trigger": "minecraft:tick"
+          }
+     },
+     "display": {
+          "announce_to_chat": false,
+          "description": "Some test spells based on CloudWolf's tutorials.",
+          "icon": {
+               "item": "minecraft:barrier",
+			   "nbt": "{CustomModelData:3160000}"
+          },
+          "show_toast": false,
+          "title": "Spells Tests"
+     },
+     "parent": "global:tsp"
+}
