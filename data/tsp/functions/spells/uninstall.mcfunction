@@ -29,4 +29,4 @@ scoreboard objectives remove tsp.spells.3.2.2
 scoreboard objectives remove tsp.spells.5.3  
 
 # disable datapack
-datapack disable "file/Spells Tests"
+datapack disable "file/SpellsTests.zip"

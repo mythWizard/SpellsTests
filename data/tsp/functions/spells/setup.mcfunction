@@ -20,44 +20,58 @@ scoreboard objectives add tsp.spells.m.100 dummy
 scoreboard players set @a tsp.spells.m.100 100
 
 # set player mana if they havent played yet
-execute as @a if score @s tsp.spells.mmana = @s tsp.spells.mmana run scoreboard players set @s tsp.spells.mmana 1000
-execute as @a if score @s tsp.spells.cmana = @s tsp.spells.cmana run scoreboard players set @s tsp.spells.cmana 1000
+scoreboard players set @a tsp.spells.mmana 1000
+scoreboard players set @a tsp.spells.cmana 500
 
 # individual spell cooldowns in format. In cooldown, 0 is cast time and 1 is effect time
 # 1 Alteration school.spellid.cooldown(0/1)
 # oakflesh
 scoreboard objectives add tsp.spells.1.1.0 dummy
+scoreboard players set @a tsp.spells.1.1.0 0
 scoreboard objectives add tsp.spells.1.1.1 dummy
+scoreboard players set @a tsp.spells.1.1.1 0
+
 # stoneflesh
 scoreboard objectives add tsp.spells.1.2.0 dummy
+scoreboard players set @a tsp.spells.1.2.0 0
 scoreboard objectives add tsp.spells.1.2.1 dummy
+scoreboard players set @a tsp.spells.1.2.1 0
+
 # ironflesh
 scoreboard objectives add tsp.spells.1.3.0 dummy
+scoreboard players set @a tsp.spells.1.3.0 0
 scoreboard objectives add tsp.spells.1.3.1 dummy
+scoreboard players set @a tsp.spells.1.3.1 0
+
 # diamondflesh
 scoreboard objectives add tsp.spells.1.4.0 dummy
+scoreboard players set @a tsp.spells.1.4.0 0
 scoreboard objectives add tsp.spells.1.4.1 dummy
+scoreboard players set @a tsp.spells.1.4.1 0
 
 # 2 Conjuration school.spellid.cooldown(0/1)
 
 # 3 Destruction school.element.spellid
 # fire
 # fireball
-scoreboard objectives add tsp.spells.3.1.1 dummy 
+scoreboard objectives add tsp.spells.3.1.1 dummy
+scoreboard players set @a tsp.spells.3.1.1 0
 
 # ice
 # ice shard
-scoreboard objectives add tsp.spells.3.2.2 dummy 
+scoreboard objectives add tsp.spells.3.2.2 dummy
+scoreboard players set @a tsp.spells.3.2.2 0
 
 # 4 Illusion school.spellid.cooldown(0/1)
 
 # 5 Restoration school.spellid
 # fast heal
 scoreboard objectives add tsp.spells.5.3 dummy 
+scoreboard players set @a tsp.spells.5.3 0
 
 
 
 # load message
-tellraw @p ["",{"text":"Successfully loaded data pack: "},{"text":"Spells Tests","color":"yellow"},{"text":" by "},{"text":"TheSaltyPug","color":"dark_purple"}]
+tellraw @p ["",{"text":"Successfully loaded data pack: "},{"text":"Spells Tests v1.0.2","color":"yellow"},{"text":" by "},{"text":"TheSaltyPug","color":"dark_purple"}]
 
 
