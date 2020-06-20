@@ -1,7 +1,7 @@
 #> This is the uninstall function
 # remove scoreboards
 scoreboard objectives remove element 
-scoreboard objectives remove cast minecraft.used:minecraft.carrot_on_a_stick
+scoreboard objectives remove cast
 scoreboard objectives remove spell_id 
 scoreboard objectives remove school 
 scoreboard objectives remove damage 
